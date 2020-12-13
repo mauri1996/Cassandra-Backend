@@ -1,0 +1,29 @@
+###
+GET http://localhost:3000/api/datos
+
+
+####
+POST http://localhost:3000/api/datos
+Content-Type: application/json
+
+{
+    "id": "1",
+    "name": "auto",
+    "price": "20000"
+}
+
+###
+GET http://localhost:3000/api/datos/1
+
+###
+PUT http://localhost:3000/api/datos/1
+Content-Type: application/json
+
+{
+    "id": "1",
+    "name": "Auto_2",
+    "price": "3000"
+    
+}
+###
+DELETE  http://localhost:3000/api/datos/1
